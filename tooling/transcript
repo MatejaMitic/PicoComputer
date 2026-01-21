@@ -1,0 +1,1605 @@
+# vsim -do ./config/run.tcl -lib work -c -wlf ./waveform.wlf work.top 
+# Loading work.top
+# Loading work.alu
+# Loading work.register
+# do ./config/run.tcl 
+# Vreme =  0, a = 1010, b = 0011 Izlaz = 1101, oc = 000
+# Vreme =  5, a = 1010, b = 0011 Izlaz = 0111, oc = 001
+# Vreme = 10, a = 1010, b = 0011 Izlaz = 1110, oc = 010
+# Vreme = 15, a = 1010, b = 0011 Izlaz = 0011, oc = 011
+# Vreme = 20, a = 1010, b = 0011 Izlaz = 0101, oc = 100
+# Vreme = 25, a = 1010, b = 0011 Izlaz = 1001, oc = 101
+# Vreme = 30, a = 1010, b = 0011 Izlaz = 1011, oc = 110
+# Vreme = 35, a = 1010, b = 0011 Izlaz = 0010, oc = 111
+# Break in Module top at ../src/simulation/top.v line 20
+# Stopped at ../src/simulation/top.v line 20 
+# Simulation Breakpoint: Break in Module top at ../src/simulation/top.v line 20
+# MACRO ././config/run.tcl PAUSED at line 2
+# Stopped at ../src/simulation/top.v line 20 
+# --- REG CHANGE @40 ---
+# OUT = 0000, IN = 0000
+# Controls: cl=0, ld=0, inc=0, dec=0
+# Shift: sr=0, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @50 ---
+# OUT = 0001, IN = 1110
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @60 ---
+# OUT = 0000, IN = 1101
+# Controls: cl=1, ld=1, inc=0, dec=0
+# Shift: sr=1, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @110 ---
+# OUT = 1011, IN = 1011
+# Controls: cl=0, ld=1, inc=1, dec=0
+# Shift: sr=0, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @120 ---
+# OUT = 0101, IN = 0101
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @130 ---
+# OUT = 0111, IN = 0111
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @140 ---
+# OUT = 0000, IN = 1110
+# Controls: cl=1, ld=1, inc=1, dec=0
+# Shift: sr=0, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @190 ---
+# OUT = 1110, IN = 1110
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @200 ---
+# OUT = 0000, IN = 1010
+# Controls: cl=1, ld=1, inc=0, dec=1
+# Shift: sr=1, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @210 ---
+# OUT = 1111, IN = 1100
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=0, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @220 ---
+# OUT = 0111, IN = 1001
+# Controls: cl=0, ld=0, inc=0, dec=0
+# Shift: sr=1, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @230 ---
+# OUT = 1000, IN = 1010
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=1, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @240 ---
+# OUT = 0000, IN = 1011
+# Controls: cl=1, ld=1, inc=0, dec=0
+# Shift: sr=0, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @250 ---
+# OUT = 0110, IN = 0110
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @260 ---
+# OUT = 0000, IN = 1111
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=0, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @290 ---
+# OUT = 0001, IN = 0110
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @300 ---
+# OUT = 0000, IN = 0001
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @310 ---
+# OUT = 1011, IN = 1011
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=1, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @320 ---
+# OUT = 1100, IN = 0011
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @330 ---
+# OUT = 0000, IN = 0011
+# Controls: cl=1, ld=1, inc=0, dec=1
+# Shift: sr=1, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @370 ---
+# OUT = 1100, IN = 1100
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=1, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @380 ---
+# OUT = 0000, IN = 1100
+# Controls: cl=1, ld=1, inc=1, dec=0
+# Shift: sr=1, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @400 ---
+# OUT = 1011, IN = 1011
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=0, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @410 ---
+# OUT = 0000, IN = 0000
+# Controls: cl=1, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @420 ---
+# OUT = 1000, IN = 1000
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=0, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @430 ---
+# OUT = 0000, IN = 0001
+# Controls: cl=0, ld=0, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @450 ---
+# OUT = 1100, IN = 1100
+# Controls: cl=0, ld=1, inc=1, dec=0
+# Shift: sr=0, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @470 ---
+# OUT = 0000, IN = 1000
+# Controls: cl=1, ld=1, inc=0, dec=0
+# Shift: sr=1, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @500 ---
+# OUT = 1110, IN = 1110
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=0, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @510 ---
+# OUT = 0000, IN = 1010
+# Controls: cl=1, ld=0, inc=0, dec=1
+# Shift: sr=0, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @520 ---
+# OUT = 1111, IN = 1111
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=0, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @530 ---
+# OUT = 0011, IN = 0011
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=0, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @540 ---
+# OUT = 0000, IN = 1011
+# Controls: cl=1, ld=1, inc=0, dec=1
+# Shift: sr=1, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @560 ---
+# OUT = 0100, IN = 0100
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @570 ---
+# OUT = 0000, IN = 1001
+# Controls: cl=1, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @580 ---
+# OUT = 0001, IN = 0111
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @590 ---
+# OUT = 0010, IN = 1000
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=1, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @600 ---
+# OUT = 1110, IN = 1110
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @610 ---
+# OUT = 0000, IN = 0101
+# Controls: cl=1, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @650 ---
+# OUT = 1000, IN = 1000
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=0, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @660 ---
+# OUT = 0000, IN = 0111
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @680 ---
+# OUT = 1111, IN = 1111
+# Controls: cl=0, ld=1, inc=1, dec=0
+# Shift: sr=1, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @690 ---
+# OUT = 0000, IN = 0000
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @730 ---
+# OUT = 1111, IN = 0001
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @740 ---
+# OUT = 0001, IN = 0001
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=1, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @750 ---
+# OUT = 0000, IN = 0110
+# Controls: cl=1, ld=0, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @780 ---
+# OUT = 0001, IN = 0011
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @790 ---
+# OUT = 0011, IN = 0011
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @800 ---
+# OUT = 0000, IN = 0000
+# Controls: cl=0, ld=1, inc=1, dec=0
+# Shift: sr=1, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @820 ---
+# OUT = 1111, IN = 0110
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @830 ---
+# OUT = 0000, IN = 1001
+# Controls: cl=1, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @870 ---
+# OUT = 0100, IN = 0100
+# Controls: cl=0, ld=1, inc=1, dec=0
+# Shift: sr=1, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @880 ---
+# OUT = 0101, IN = 1010
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @890 ---
+# OUT = 0001, IN = 0001
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @900 ---
+# OUT = 0000, IN = 1101
+# Controls: cl=1, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @910 ---
+# OUT = 0001, IN = 0110
+# Controls: cl=0, ld=0, inc=0, dec=0
+# Shift: sr=0, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @930 ---
+# OUT = 0000, IN = 1100
+# Controls: cl=1, ld=1, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @960 ---
+# OUT = 1000, IN = 1000
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @970 ---
+# OUT = 0000, IN = 0011
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=0, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @1000 ---
+# OUT = 0001, IN = 1100
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=1, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @1010 ---
+# OUT = 0000, IN = 1011
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=1, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @1020 ---
+# OUT = 0101, IN = 0101
+# Controls: cl=0, ld=1, inc=1, dec=0
+# Shift: sr=1, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @1030 ---
+# OUT = 0000, IN = 1111
+# Controls: cl=1, ld=0, inc=1, dec=0
+# Shift: sr=1, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @1050 ---
+# OUT = 1000, IN = 0111
+# Controls: cl=0, ld=0, inc=0, dec=0
+# Shift: sr=1, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @1060 ---
+# OUT = 0101, IN = 0101
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @1070 ---
+# OUT = 0001, IN = 0001
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @1080 ---
+# OUT = 0110, IN = 0110
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @1090 ---
+# OUT = 0101, IN = 0101
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @1100 ---
+# OUT = 0000, IN = 1011
+# Controls: cl=1, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @1110 ---
+# OUT = 0001, IN = 1101
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @1120 ---
+# OUT = 0100, IN = 0100
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @1130 ---
+# OUT = 0000, IN = 0000
+# Controls: cl=1, ld=0, inc=0, dec=1
+# Shift: sr=0, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @1140 ---
+# OUT = 0111, IN = 0111
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @1150 ---
+# OUT = 0000, IN = 0000
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=1, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @1190 ---
+# OUT = 0001, IN = 0001
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @1200 ---
+# OUT = 0010, IN = 0001
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=1, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @1210 ---
+# OUT = 0001, IN = 0010
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @1220 ---
+# OUT = 0010, IN = 0000
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @1230 ---
+# OUT = 0101, IN = 0101
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=1, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @1240 ---
+# OUT = 0000, IN = 0010
+# Controls: cl=1, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @1250 ---
+# OUT = 0001, IN = 1100
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @1260 ---
+# OUT = 0000, IN = 1100
+# Controls: cl=1, ld=0, inc=1, dec=1
+# Shift: sr=0, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @1300 ---
+# OUT = 0101, IN = 0101
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=0, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @1310 ---
+# OUT = 1011, IN = 1011
+# Controls: cl=0, ld=0, inc=0, dec=0
+# Shift: sr=0, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @1320 ---
+# OUT = 0011, IN = 0011
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @1330 ---
+# OUT = 0100, IN = 0110
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @1340 ---
+# OUT = 0000, IN = 1011
+# Controls: cl=1, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @1350 ---
+# OUT = 1111, IN = 0000
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @1360 ---
+# OUT = 0000, IN = 0001
+# Controls: cl=1, ld=1, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @1370 ---
+# OUT = 1111, IN = 0101
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @1380 ---
+# OUT = 0000, IN = 0010
+# Controls: cl=1, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @1390 ---
+# OUT = 0111, IN = 0111
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @1400 ---
+# OUT = 0000, IN = 0000
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @1430 ---
+# OUT = 0001, IN = 0110
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=1, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @1440 ---
+# OUT = 1011, IN = 1011
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @1450 ---
+# OUT = 0000, IN = 0011
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=1, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @1460 ---
+# OUT = 1000, IN = 1000
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @1470 ---
+# OUT = 0000, IN = 0101
+# Controls: cl=1, ld=1, inc=0, dec=0
+# Shift: sr=0, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @1480 ---
+# OUT = 0111, IN = 0111
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @1490 ---
+# OUT = 0001, IN = 0001
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @1500 ---
+# OUT = 0000, IN = 0001
+# Controls: cl=1, ld=1, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @1520 ---
+# OUT = 0001, IN = 1100
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=1, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @1530 ---
+# OUT = 0000, IN = 0001
+# Controls: cl=1, ld=0, inc=0, dec=1
+# Shift: sr=0, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @1550 ---
+# OUT = 1010, IN = 1010
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=1, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @1560 ---
+# OUT = 1101, IN = 1101
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=1, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @1570 ---
+# OUT = 0000, IN = 1110
+# Controls: cl=1, ld=0, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @1590 ---
+# OUT = 0111, IN = 0111
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=1, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @1610 ---
+# OUT = 0000, IN = 1100
+# Controls: cl=1, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @1620 ---
+# OUT = 0001, IN = 1110
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @1630 ---
+# OUT = 0000, IN = 1111
+# Controls: cl=1, ld=1, inc=1, dec=0
+# Shift: sr=1, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @1650 ---
+# OUT = 0001, IN = 0010
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @1660 ---
+# OUT = 0000, IN = 1110
+# Controls: cl=1, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @1670 ---
+# OUT = 0001, IN = 1111
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @1680 ---
+# OUT = 0000, IN = 1100
+# Controls: cl=1, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @1740 ---
+# OUT = 1010, IN = 1010
+# Controls: cl=0, ld=1, inc=1, dec=0
+# Shift: sr=0, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @1750 ---
+# OUT = 0000, IN = 1011
+# Controls: cl=1, ld=1, inc=0, dec=1
+# Shift: sr=0, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @1770 ---
+# OUT = 0110, IN = 0110
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @1780 ---
+# OUT = 1001, IN = 1001
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @1790 ---
+# OUT = 1010, IN = 1000
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @1800 ---
+# OUT = 0000, IN = 1110
+# Controls: cl=1, ld=1, inc=1, dec=0
+# Shift: sr=0, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @1850 ---
+# OUT = 1101, IN = 1101
+# Controls: cl=0, ld=1, inc=1, dec=0
+# Shift: sr=0, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @1860 ---
+# OUT = 0110, IN = 0110
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @1870 ---
+# OUT = 1011, IN = 0011
+# Controls: cl=0, ld=0, inc=0, dec=0
+# Shift: sr=1, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @1880 ---
+# OUT = 0110, IN = 0110
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=1, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @1890 ---
+# OUT = 0000, IN = 0100
+# Controls: cl=1, ld=1, inc=0, dec=1
+# Shift: sr=0, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @1920 ---
+# OUT = 1111, IN = 1010
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @1930 ---
+# OUT = 0000, IN = 0011
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @1950 ---
+# OUT = 1111, IN = 0100
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @1960 ---
+# OUT = 0000, IN = 0011
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=1, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @1970 ---
+# OUT = 0101, IN = 0101
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=1, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @1980 ---
+# OUT = 0110, IN = 1100
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=0, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @1990 ---
+# OUT = 0111, IN = 0011
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @2000 ---
+# OUT = 1000, IN = 0001
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @2010 ---
+# OUT = 0111, IN = 1010
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @2020 ---
+# OUT = 0011, IN = 0110
+# Controls: cl=0, ld=0, inc=0, dec=0
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @2030 ---
+# OUT = 0000, IN = 0101
+# Controls: cl=1, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @2050 ---
+# OUT = 0001, IN = 0010
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @2060 ---
+# OUT = 0000, IN = 1101
+# Controls: cl=1, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @2070 ---
+# OUT = 1111, IN = 1100
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=0, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @2080 ---
+# OUT = 0000, IN = 1000
+# Controls: cl=1, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @2160 ---
+# OUT = 1001, IN = 1001
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @2170 ---
+# OUT = 0000, IN = 1100
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=0, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @2220 ---
+# OUT = 1000, IN = 0000
+# Controls: cl=0, ld=0, inc=0, dec=0
+# Shift: sr=1, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @2230 ---
+# OUT = 0000, IN = 0111
+# Controls: cl=1, ld=1, inc=1, dec=0
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @2240 ---
+# OUT = 0001, IN = 0001
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @2250 ---
+# OUT = 0000, IN = 1000
+# Controls: cl=1, ld=1, inc=0, dec=1
+# Shift: sr=0, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @2260 ---
+# OUT = 0001, IN = 1111
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=1, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @2270 ---
+# OUT = 0000, IN = 0001
+# Controls: cl=1, ld=1, inc=0, dec=1
+# Shift: sr=0, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @2290 ---
+# OUT = 1101, IN = 1101
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @2300 ---
+# OUT = 0000, IN = 1010
+# Controls: cl=1, ld=0, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @2320 ---
+# OUT = 1111, IN = 0011
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=0, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @2330 ---
+# OUT = 0101, IN = 0101
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=0, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @2340 ---
+# OUT = 0000, IN = 1000
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @2360 ---
+# OUT = 1111, IN = 1011
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=0, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @2370 ---
+# OUT = 1110, IN = 0110
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @2380 ---
+# OUT = 0011, IN = 0011
+# Controls: cl=0, ld=1, inc=1, dec=0
+# Shift: sr=1, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @2390 ---
+# OUT = 0010, IN = 1011
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=0, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @2400 ---
+# OUT = 0000, IN = 1010
+# Controls: cl=1, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @2410 ---
+# OUT = 1001, IN = 1001
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @2420 ---
+# OUT = 1110, IN = 1110
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @2430 ---
+# OUT = 1111, IN = 0001
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @2440 ---
+# OUT = 1110, IN = 0100
+# Controls: cl=0, ld=0, inc=0, dec=0
+# Shift: sr=0, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @2450 ---
+# OUT = 0000, IN = 1111
+# Controls: cl=1, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @2460 ---
+# OUT = 0010, IN = 0010
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @2470 ---
+# OUT = 0000, IN = 0101
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=0, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @2480 ---
+# OUT = 0100, IN = 0100
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=0, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @2490 ---
+# OUT = 0101, IN = 1100
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @2510 ---
+# OUT = 0000, IN = 0010
+# Controls: cl=1, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @2590 ---
+# OUT = 0110, IN = 0110
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @2600 ---
+# OUT = 0000, IN = 1001
+# Controls: cl=1, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @2710 ---
+# OUT = 1101, IN = 1101
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @2720 ---
+# OUT = 1110, IN = 1001
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=0, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @2730 ---
+# OUT = 1111, IN = 1110
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @2740 ---
+# OUT = 0000, IN = 1011
+# Controls: cl=1, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @2750 ---
+# OUT = 0001, IN = 0000
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @2760 ---
+# OUT = 0110, IN = 0110
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=1, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @2770 ---
+# OUT = 0111, IN = 1101
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @2780 ---
+# OUT = 0000, IN = 1110
+# Controls: cl=1, ld=1, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @2790 ---
+# OUT = 1111, IN = 1111
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @2800 ---
+# OUT = 0000, IN = 0011
+# Controls: cl=1, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @2850 ---
+# OUT = 1111, IN = 1101
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @2860 ---
+# OUT = 1110, IN = 1101
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=0, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @2870 ---
+# OUT = 0010, IN = 0010
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @2880 ---
+# OUT = 0000, IN = 1000
+# Controls: cl=1, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @2930 ---
+# OUT = 1111, IN = 0101
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @2940 ---
+# OUT = 0000, IN = 0110
+# Controls: cl=1, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @2980 ---
+# OUT = 1101, IN = 1101
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @2990 ---
+# OUT = 0111, IN = 0111
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @3000 ---
+# OUT = 0000, IN = 1011
+# Controls: cl=1, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @3010 ---
+# OUT = 0001, IN = 0001
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=1, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @3020 ---
+# OUT = 0000, IN = 1111
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @3030 ---
+# OUT = 0001, IN = 0111
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @3040 ---
+# OUT = 0000, IN = 1101
+# Controls: cl=1, ld=1, inc=1, dec=0
+# Shift: sr=1, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @3060 ---
+# OUT = 1111, IN = 1111
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=0, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @3070 ---
+# OUT = 0001, IN = 0001
+# Controls: cl=0, ld=1, inc=1, dec=0
+# Shift: sr=0, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @3080 ---
+# OUT = 0000, IN = 1011
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @3140 ---
+# OUT = 0111, IN = 0111
+# Controls: cl=0, ld=1, inc=1, dec=0
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @3150 ---
+# OUT = 0000, IN = 1111
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=0, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @3180 ---
+# OUT = 0001, IN = 0111
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @3190 ---
+# OUT = 0000, IN = 1101
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=1, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @3200 ---
+# OUT = 0001, IN = 1010
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @3210 ---
+# OUT = 0000, IN = 0101
+# Controls: cl=1, ld=1, inc=0, dec=0
+# Shift: sr=1, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @3240 ---
+# OUT = 0100, IN = 0100
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=1, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @3250 ---
+# OUT = 1010, IN = 1010
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=0, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @3260 ---
+# OUT = 0000, IN = 0010
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=1, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @3280 ---
+# OUT = 1000, IN = 1000
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @3290 ---
+# OUT = 0101, IN = 0101
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @3300 ---
+# OUT = 0000, IN = 1110
+# Controls: cl=1, ld=1, inc=0, dec=1
+# Shift: sr=1, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @3320 ---
+# OUT = 0001, IN = 1010
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=1, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @3330 ---
+# OUT = 1111, IN = 1111
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=1, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @3350 ---
+# OUT = 1110, IN = 1001
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @3360 ---
+# OUT = 1101, IN = 1110
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=0, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @3370 ---
+# OUT = 0000, IN = 1001
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @3400 ---
+# OUT = 1010, IN = 1010
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @3410 ---
+# OUT = 1000, IN = 1000
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @3420 ---
+# OUT = 0000, IN = 0011
+# Controls: cl=1, ld=1, inc=1, dec=0
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @3440 ---
+# OUT = 1011, IN = 1011
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @3460 ---
+# OUT = 0000, IN = 1011
+# Controls: cl=1, ld=1, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @3470 ---
+# OUT = 0001, IN = 1001
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @3480 ---
+# OUT = 1010, IN = 1010
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @3490 ---
+# OUT = 0101, IN = 0111
+# Controls: cl=0, ld=0, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @3500 ---
+# OUT = 0000, IN = 1101
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @3520 ---
+# OUT = 1110, IN = 1110
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @3530 ---
+# OUT = 0000, IN = 1101
+# Controls: cl=1, ld=1, inc=1, dec=0
+# Shift: sr=1, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @3570 ---
+# OUT = 0010, IN = 0010
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @3580 ---
+# OUT = 0011, IN = 0010
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @3590 ---
+# OUT = 1100, IN = 1100
+# Controls: cl=0, ld=1, inc=1, dec=0
+# Shift: sr=0, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @3600 ---
+# OUT = 0001, IN = 0001
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @3610 ---
+# OUT = 0000, IN = 0100
+# Controls: cl=1, ld=0, inc=1, dec=0
+# Shift: sr=1, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @3630 ---
+# OUT = 0100, IN = 0100
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=0, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @3640 ---
+# OUT = 0000, IN = 0100
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=0, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @3700 ---
+# OUT = 0111, IN = 0111
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=1, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @3710 ---
+# OUT = 0000, IN = 0000
+# Controls: cl=1, ld=0, inc=1, dec=1
+# Shift: sr=0, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @3730 ---
+# OUT = 1101, IN = 1101
+# Controls: cl=0, ld=1, inc=1, dec=0
+# Shift: sr=1, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @3740 ---
+# OUT = 0111, IN = 0111
+# Controls: cl=0, ld=1, inc=1, dec=0
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @3760 ---
+# OUT = 0000, IN = 1011
+# Controls: cl=1, ld=1, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @3770 ---
+# OUT = 1011, IN = 1011
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @3780 ---
+# OUT = 0000, IN = 0010
+# Controls: cl=1, ld=1, inc=0, dec=0
+# Shift: sr=0, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @3860 ---
+# OUT = 0100, IN = 0100
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @3870 ---
+# OUT = 1010, IN = 1010
+# Controls: cl=0, ld=1, inc=1, dec=0
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @3890 ---
+# OUT = 0000, IN = 0101
+# Controls: cl=1, ld=1, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @3940 ---
+# OUT = 0001, IN = 0000
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @3950 ---
+# OUT = 0000, IN = 1100
+# Controls: cl=1, ld=0, inc=0, dec=1
+# Shift: sr=0, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @3960 ---
+# OUT = 0101, IN = 0101
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @3970 ---
+# OUT = 1011, IN = 1011
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @3980 ---
+# OUT = 0000, IN = 1110
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @3990 ---
+# OUT = 1110, IN = 1110
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=1, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @4000 ---
+# OUT = 0000, IN = 0110
+# Controls: cl=1, ld=0, inc=1, dec=0
+# Shift: sr=1, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @4030 ---
+# OUT = 0100, IN = 0100
+# Controls: cl=0, ld=1, inc=1, dec=0
+# Shift: sr=0, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @4040 ---
+# OUT = 0000, IN = 0011
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=1, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @4050 ---
+# OUT = 1000, IN = 1000
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @4060 ---
+# OUT = 0000, IN = 1011
+# Controls: cl=1, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @4080 ---
+# OUT = 1010, IN = 1010
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=0, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @4090 ---
+# OUT = 1110, IN = 1110
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=0, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @4100 ---
+# OUT = 0000, IN = 1000
+# Controls: cl=1, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @4110 ---
+# OUT = 1111, IN = 0110
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @4120 ---
+# OUT = 1110, IN = 0100
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @4130 ---
+# OUT = 1111, IN = 1111
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @4140 ---
+# OUT = 0000, IN = 0111
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=1, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @4160 ---
+# OUT = 1000, IN = 1000
+# Controls: cl=0, ld=1, inc=1, dec=0
+# Shift: sr=1, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @4170 ---
+# OUT = 0000, IN = 1000
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @4180 ---
+# OUT = 0101, IN = 0101
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @4190 ---
+# OUT = 0000, IN = 0101
+# Controls: cl=1, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @4200 ---
+# OUT = 1111, IN = 1110
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @4210 ---
+# OUT = 0000, IN = 1010
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @4230 ---
+# OUT = 1111, IN = 1011
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=0, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @4240 ---
+# OUT = 1110, IN = 1000
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @4250 ---
+# OUT = 0000, IN = 1000
+# Controls: cl=1, ld=0, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @4290 ---
+# OUT = 0001, IN = 1111
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=1, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @4300 ---
+# OUT = 0000, IN = 0011
+# Controls: cl=1, ld=1, inc=0, dec=1
+# Shift: sr=0, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @4310 ---
+# OUT = 0001, IN = 1001
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @4320 ---
+# OUT = 0000, IN = 0111
+# Controls: cl=1, ld=0, inc=0, dec=0
+# Shift: sr=1, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @4330 ---
+# OUT = 0011, IN = 0011
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @4340 ---
+# OUT = 0000, IN = 1101
+# Controls: cl=1, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @4370 ---
+# OUT = 1011, IN = 1011
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @4380 ---
+# OUT = 1010, IN = 1101
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @4390 ---
+# OUT = 0000, IN = 0010
+# Controls: cl=1, ld=1, inc=1, dec=0
+# Shift: sr=0, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @4420 ---
+# OUT = 0100, IN = 0100
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=0, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @4430 ---
+# OUT = 0011, IN = 1110
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @4440 ---
+# OUT = 0000, IN = 1110
+# Controls: cl=1, ld=1, inc=1, dec=0
+# Shift: sr=1, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @4480 ---
+# OUT = 0001, IN = 1110
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @4490 ---
+# OUT = 0000, IN = 0100
+# Controls: cl=1, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @4500 ---
+# OUT = 0110, IN = 0110
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @4510 ---
+# OUT = 0000, IN = 1000
+# Controls: cl=1, ld=1, inc=1, dec=0
+# Shift: sr=0, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @4520 ---
+# OUT = 0001, IN = 0101
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @4530 ---
+# OUT = 0000, IN = 0010
+# Controls: cl=1, ld=1, inc=1, dec=1
+# Shift: sr=0, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @4540 ---
+# OUT = 1111, IN = 0101
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @4550 ---
+# OUT = 0000, IN = 1001
+# Controls: cl=1, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @4580 ---
+# OUT = 1000, IN = 1110
+# Controls: cl=0, ld=0, inc=0, dec=0
+# Shift: sr=1, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @4590 ---
+# OUT = 0000, IN = 0100
+# Controls: cl=1, ld=0, inc=1, dec=1
+# Shift: sr=0, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @4600 ---
+# OUT = 1011, IN = 1011
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @4610 ---
+# OUT = 1010, IN = 0100
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=0, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @4620 ---
+# OUT = 1111, IN = 1111
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @4630 ---
+# OUT = 0000, IN = 1011
+# Controls: cl=1, ld=1, inc=0, dec=1
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @4670 ---
+# OUT = 0001, IN = 0111
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @4680 ---
+# OUT = 0000, IN = 0011
+# Controls: cl=1, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @4690 ---
+# OUT = 1111, IN = 1110
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=0, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @4710 ---
+# OUT = 0000, IN = 0000
+# Controls: cl=1, ld=1, inc=0, dec=1
+# Shift: sr=0, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @4760 ---
+# OUT = 1011, IN = 1011
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=0, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @4770 ---
+# OUT = 0111, IN = 0001
+# Controls: cl=0, ld=0, inc=0, dec=0
+# Shift: sr=0, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @4790 ---
+# OUT = 0000, IN = 1001
+# Controls: cl=1, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @4800 ---
+# OUT = 0001, IN = 0100
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=0, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @4810 ---
+# OUT = 0011, IN = 0011
+# Controls: cl=0, ld=1, inc=0, dec=1
+# Shift: sr=1, ir=1, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @4820 ---
+# OUT = 0000, IN = 0110
+# Controls: cl=1, ld=1, inc=1, dec=0
+# Shift: sr=0, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @4840 ---
+# OUT = 1111, IN = 0010
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @4850 ---
+# OUT = 0000, IN = 1011
+# Controls: cl=1, ld=1, inc=0, dec=1
+# Shift: sr=0, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @4900 ---
+# OUT = 1111, IN = 1100
+# Controls: cl=0, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @4910 ---
+# OUT = 0000, IN = 1010
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=1, ir=1, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @4920 ---
+# OUT = 0010, IN = 0010
+# Controls: cl=0, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @4930 ---
+# OUT = 0000, IN = 0100
+# Controls: cl=1, ld=1, inc=0, dec=1
+# Shift: sr=0, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @4940 ---
+# OUT = 1000, IN = 0010
+# Controls: cl=0, ld=0, inc=0, dec=0
+# Shift: sr=1, ir=1, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @4950 ---
+# OUT = 0100, IN = 0100
+# Controls: cl=0, ld=1, inc=0, dec=0
+# Shift: sr=0, ir=0, sl=0, il=1
+# ------------------------
+# --- REG CHANGE @4960 ---
+# OUT = 0000, IN = 0010
+# Controls: cl=1, ld=1, inc=1, dec=1
+# Shift: sr=1, ir=0, sl=1, il=1
+# ------------------------
+# --- REG CHANGE @5000 ---
+# OUT = 0101, IN = 0101
+# Controls: cl=0, ld=1, inc=1, dec=0
+# Shift: sr=1, ir=1, sl=1, il=0
+# ------------------------
+# --- REG CHANGE @5010 ---
+# OUT = 0000, IN = 1111
+# Controls: cl=1, ld=0, inc=0, dec=1
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @5030 ---
+# OUT = 0001, IN = 0001
+# Controls: cl=0, ld=0, inc=1, dec=0
+# Shift: sr=1, ir=0, sl=0, il=0
+# ------------------------
+# --- REG CHANGE @5040 ---
+# OUT = 0010, IN = 0110
+# Controls: cl=0, ld=0, inc=1, dec=1
+# Shift: sr=0, ir=0, sl=0, il=1
+# ------------------------
+# ** Note: $finish    : ../src/simulation/top.v(36)
+#    Time: 5042 ps  Iteration: 0  Instance: /top
