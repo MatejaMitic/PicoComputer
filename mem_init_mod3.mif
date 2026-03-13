@@ -1,0 +1,43 @@
+-- Quartus II generated Memory Initialization File (.mif)
+-- Test program za BGT (Branch if Greater Than, opcode=6)
+--
+-- Logika programa:
+--   mem[1] = IN (prvi broj)
+--   mem[2] = IN (drugi broj)
+--   ako mem[1] > mem[2]: ispisi mem[1], STOP
+--   inace:               ispisi mem[2], STOP
+--
+-- Instrukcija BGT format (dvorecna):
+--   6128 = 0110 0001 0010 1000
+--          opcode=0110=BGT
+--          mode_x=0, addr_x=001 -> X = mem[1]
+--          mode_y=0, addr_y=010 -> Y = mem[2]
+--          mode_z=1, addr_z=000 -> skok na immed adresu
+--   000E = 14 (dec) -> adresa OUT A grane
+
+WIDTH=16;
+DEPTH=64;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+    [0..7]:     0000;
+
+    8:          7100;   -- IN A: mem[1] = SW[3:0]
+    9:          7200;   -- IN B: mem[2] = SW[3:0]
+
+    -- BGT mem[1], mem[2], -> adresa 14
+    10:         6128;   -- BGT A(1), B(2), immed   (dvorecna!)
+    11:         000E;   -- adresa skoka = 14
+
+    -- Grana: mem[1] <= mem[2]
+    12:         8200;   -- OUT B: ispisi mem[2]
+    13:         F000;   -- STOP
+
+    -- Grana: mem[1] > mem[2] (dosli skokom na 14)
+    14:         8100;   -- OUT A: ispisi mem[1]
+    15:         F000;   -- STOP
+
+    [16..63]:   0000;
+END;

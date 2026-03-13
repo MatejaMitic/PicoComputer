@@ -1,0 +1,3 @@
+src/simulation/modules/memory.v
+src/simulation/modules/dut.v
+src/simulation/tb.v

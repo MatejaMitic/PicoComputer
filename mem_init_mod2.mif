@@ -1,0 +1,29 @@
+-- Quartus II generated Memory Initialization File (.mif)
+-- Test program za ADD sa konstantom (ADD_CONST, opcode=9)
+
+WIDTH=16;
+DEPTH=64;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+    [0..7]:     0000;
+
+    8:          7101;   -- IN A (addr 1)          A = ?
+    9:          9101;   -- ADD_CONST A, _, A       mem[1] = mem[1] + konstanta
+    10:         0005;   -- konstanta = 5
+    11:         8101;   -- OUT A                   ispiši mem[1]
+
+    12:         7201;   -- IN B (addr 2)           B = ?
+    13:         9202;   -- ADD_CONST B, _, B       mem[2] = mem[2] + konstanta
+    14:         000A;   -- konstanta = 10
+    15:         8201;   -- OUT B                   ispiši mem[2]
+
+    16:         1312;   -- ADD C, A, B             mem[3] = mem[1] + mem[2]
+    17:         8301;   -- OUT C                   ispiši mem[3]
+
+    18:         F000;   -- STOP
+
+    [19..63]:   0000;
+END;
