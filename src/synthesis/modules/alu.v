@@ -1,8 +1,12 @@
-module alu (oc,a,b,f);
-    input [2:0] oc;
-    input [3:0] a;
-    input [3:0] b;
-    output reg [3:0] f;
+module alu #(
+    parameter DATA_WIDTH = 16,
+    parameter HIGH = DATA_WIDTH-1
+) (
+    input [2:0] oc,
+    input [HIGH:0] a,
+    input [HIGH:0] b,
+    output reg [HIGH:0] f
+);
     always @(*) begin
         case (oc)
             3'b000:begin f=a+b; end 
@@ -15,4 +19,5 @@ module alu (oc,a,b,f);
             3'b111:begin f=a&b; end 
         endcase  
     end
+    
 endmodule

@@ -1,3 +1,4 @@
+//`include "src\synthesis\modules\top.v"
 // ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  == 
 // Copyright (c) 2014 by Terasic Technologies Inc.
 // ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  == 
@@ -71,15 +72,30 @@ module DE0_CV_TOP(input CLOCK2_50,
                   output VGA_HS,
                   output [3:0] VGA_R,
                   output VGA_VS);
-    
     // ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  == 
     //  REG/WIRE declarations
     // ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  == 
     
+    assign {HEX3, HEX2} = 14'h3FFF;
+
     // ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  == 
     //  Structural coding
     // ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  == 
     
-    m21_dataflow m21(.I0(SW[0]), .I1(SW[1]), .S0(~KEY[0]), .Y(LEDR[0]));
+    top #(
+      .DIVISOR(50_000_000),
+      .FILE_NAME("mem_init.mif"),
+      .ADDR_WIDTH(6),
+      .DATA_WIDTH(16)
+    ) top_inst (
+      .clk(CLOCK_50),
+      .rst_n(RESET_N),
+      .kbd({PS2_DAT, PS2_CLK}),
+      .btn(~KEY[2:0]),
+      .sw(SW[8:0]),
+      .mnt({VGA_HS, VGA_VS, VGA_R, VGA_G, VGA_B}),
+      .led(LEDR[9:0]),
+      .hex({HEX5, HEX4, HEX1, HEX0})
+    );
 
 endmodule
