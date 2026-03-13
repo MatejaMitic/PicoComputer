@@ -1,6 +1,3 @@
-PicoComputer — 16-bit Soft-Core CPU with FPGA Synthesis and VGA/PS2 I/O
-A complete Verilog implementation of a picoComputer — a simple 16-bit soft-core processor with a three-address instruction set, synthesized on an Altera DE0/DE0-CV FPGA board. Built as a course project for Computer VLSI Systems at the School of Electrical Engineering, University of Belgrade.
-
 Overview
 The project is organized into three layers of increasing complexity:
 
@@ -87,7 +84,7 @@ The memory and CPU run on a 1 Hz divided clock (50 MHz ÷ 50,000,000) to allow s
 Simulation
 Simulation is driven from top.v / top.sv and covers:
 
-ALU — exhaustive input sweep for all arithmetic (ADD, SUB, MUL, DIV) and logic (NOT, XOR, OR, AND) operations, with pauses between groups
+ALU — exhaustive input sweep for all arithmetic and logic operations, with pauses between groups
 Register — 1000 pseudorandom input combinations; monitors output changes and prints simulation time with all relevant port values
 UVM verification (top.sv) — randomized constrained tests with code coverage reporting
 
